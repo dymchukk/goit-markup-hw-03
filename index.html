@@ -10,34 +10,43 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+     <link rel="stylesheet" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
 
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="container">
         <nav>
             <a class="logo" href=""><span class="logo-web">Web</span class="logo-st">Studio<span></a>
             <ul class="site-nav">
-                <li class="site-nav-item"> <a  class="current" class="nav-list-title"href="./index.html">Студия</a></li>
-                <li class="site-nav-item"> <a class="current" class="nav-list-title" href="./portfolio.html">Портфолио</a></li>
-                <li class="site-nav-item"> <a class="current" class="nav-list-title" href="">Контакты</a></li>
+                <li class="site-nav-item"> <a class="nav-list-title current"href="./index.html">Студия</a></li>
+                <li class="site-nav-item"> <a class="nav-list-title" href="./portfolio.html">Портфолио</a></li>
+                <li class="site-nav-item"> <a class="nav-list-title" href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="contacts">
+        </div>
+        </div>
+        <div class="header-container">
+        <ul class="contacts contacts-top">
             <li><a class="contacts-link" href="e-mail:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-
+        </div>
+    </div>
     </header>
     <main>
         <section>
+            <div class="section">
             <h1 class="solution">Эффективные решения для вашего бизнеса</h1>
-            <button class="nav-button" type="button">Заказать услугу</button>
+            <button class="btn nav-button" type="button">Заказать услугу</button>
+            </div>
         </section>
-        
-        <section>
-            <h2>Наши преимущества</h2>
+            <section>
+         <div class="container">
+            <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="features">
                 <li class="features-title">
                     <h3 class="features-item">Внимание к деталям</h3>
@@ -56,18 +65,22 @@
                     <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+        </div>
         </section>
         <section>
+            <div class="section container">
             <h2 class="works-main">Чем мы занимаемся</h2>
-            <ul class="works">
+            <ul class ="works work-list">
                 <li class="works-item"><img src="./images/img0.jpeg" alt="картинка работа на клавиатуре" width="370"></li>
                 <li class="works-item"><img src="./images/img (01).jpeg" alt="картинка с пультом" width="370"></li>
                 <li class="works-item"><img src="./images/img (02).jpeg" alt="картинка с планшетом" width="370"></li>
             </ul>
+            </div>
         </section>
         <section>
+            <div class="section container">
             <h2 class="team-our">Наша команда</h2>
-            <ul class="team">
+            <ul class ="team">
                 <li class="team-item"><img src="./images/foto01.jpeg" alt="Игорь Демьяненко" width="270">
                     <h3 class="team-title">Игорь Демьяненко</h3>
                     <p class="team-text">Product Designer</p>
@@ -85,11 +98,12 @@
                     <p class="team-text">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="footer-contacts">
-        <ul class="contacts">
+        <div class="container footer-contacts">
+        <ul  class ="container contacts">
         <li><a class="logo" href=""><span class="logo-web">Web</span><span class="logo-st">Studio</span></a></li>
             <li><address><a class="contacts-address" href="Киев, пр-т Леси Украинки, 26">Киев, пр-т Леси Украинки, 26,</a></li>
             <li><a class="contacts-link" href="mailto:info@example.com">info@example.com</a></li>
