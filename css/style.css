@@ -140,7 +140,7 @@ address {
 }
 .header-container {
   display: flex;
-  justify-content: right;
+  align-items: center;
 }
 .solution {
   background: #2f303a;
@@ -319,6 +319,7 @@ address {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .site-nav-item {
+  margin: 50px;
   display: flex;
   font-weight: 500;
   font-size: 14px;
