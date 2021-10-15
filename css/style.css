@@ -128,6 +128,8 @@ address {
   color: var(--accent-color);
 }
 .contacts-top {
+  margin-bottom: 126px;
+  margin-left: auto;
   box-sizing: border-box;
   display: flex;
 }
@@ -140,9 +142,11 @@ address {
 }
 .header-container {
   display: flex;
+  margin-top: 32px;
   align-items: center;
 }
 .solution {
+  margin-bottom: 50px;
   background: #2f303a;
   color: var(--main-bg-color);
 }
@@ -240,7 +244,13 @@ address {
   line-height: 1.18;
 }
 .nav {
+  margin-bottom: 56px;
   display: flex;
+  justify-content: center;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
 }
 .nav-list {
 }
@@ -262,10 +272,6 @@ address {
   color: var(--accent-color);
 }
 .section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -283,6 +289,10 @@ address {
   text-decoration: none;
   border-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.btn-solution {
+  display: flex;
+  margin: auto;
 }
 .nav-button {
   font-weight: 700;
@@ -318,9 +328,8 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.site-nav-item {
-  margin: 50px;
-  display: flex;
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -331,7 +340,12 @@ address {
   display: flex;
   justify-content: center;
 }
-.project-item {
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
 .item {
   font-family: Roboto;
