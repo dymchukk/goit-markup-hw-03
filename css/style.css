@@ -4,11 +4,6 @@
   --accent-color: #2196f3;
   --main-title-color: #212121;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -40,6 +35,7 @@ button {
 img {
   display: block;
   max-width: 100%;
+  padding-bottom: 30px;
 }
 a {
   text-decoration: none;
@@ -69,10 +65,13 @@ address {
   margin: 0 auto;
 }
 .current {
-  display: block;
-  border-bottom: var(--accent-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--accent-color);
 }
 .logo {
+  padding-right: 93px;
+  padding-bottom: 32px;
   font-family: "Raleway", normal;
   font-weight: 700;
   font-size: 26px;
@@ -94,6 +93,13 @@ address {
   font-size: 14px;
   line-height: ;
   color: var(--main-text-color);
+}
+.logo-booton {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.logo-booton-adress {
+  padding-bottom: 9px;
 }
 .footer-contacts {
   color: var(--main-text-color);
@@ -128,10 +134,11 @@ address {
   color: var(--accent-color);
 }
 .contacts-top {
-  margin-bottom: 126px;
+  padding-bottom: 32px;
   margin-left: auto;
   box-sizing: border-box;
   display: flex;
+  align-items: center;
 }
 .header-nav {
   display: flex;
@@ -145,19 +152,47 @@ address {
   margin-top: 32px;
   align-items: center;
 }
+.solution-col {
+  width: 1600px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background: #2f303a;
+}
 .solution {
-  margin-bottom: 50px;
+  display: flex;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  justify-content: center;
+  padding-top: 232px;
+  padding-bottom: 50px;
   background: #2f303a;
   color: var(--main-bg-color);
+}
+.solution-col-top {
+  padding-bottom: 200px;
+}
+.footer-contacts-footer {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
 }
 .features {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-right: 30px;
+  padding-bottom: 94px;
   margin: 0 30px;
 }
-.features-title {
+.features-title:not(:last-child) {
+  padding: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
@@ -186,6 +221,7 @@ address {
   color: var(--main-title-color);
 }
 .works-main {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -202,6 +238,7 @@ address {
 .work-list {
   display: flex;
   margin-left: 30px;
+  padding-bottom: 188px;
 }
 .works-item {
   display: flex;
@@ -211,18 +248,25 @@ address {
   line-height: 1.7;
   margin: 0 30px;
   justify-content: space-around;
+  padding-bottom: 50px;
 }
 .team {
   display: flex;
   color: var(--main-title-color);
   font-weight: 700;
   font-size: 36px;
+  padding-bottom: 50px;
   line-height: 1.16;
 }
 .team-item {
   flex-basis: calc(100% / 4 - 30px);
   flex-direction: row;
+  margin-bottom: 10px;
   margin-left: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0px;
+  border-color: #ffffff;
 }
 .team-our {
   font-weight: 700;
@@ -230,29 +274,37 @@ address {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
   color: var(--main-title-color);
 }
 .team-title {
+  display: flex;
+  justify-content: center;
   color: var(--main-title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  padding-bottom: 10px;
 }
 .team-text {
+  display: flex;
+  justify-content: center;
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.18;
 }
 .nav {
-  margin-bottom: 56px;
   display: flex;
   justify-content: center;
+  margin-bottom: 56px;
 }
 .nav-menu {
+  margin-right: 93px;
   display: flex;
   align-items: center;
 }
 .nav-list {
+  latter-spacing: 0.03em;
 }
 .nav-list-item {
   font-weight: 500;
@@ -287,7 +339,7 @@ address {
   background-color: #2196f3;
   color: white;
   text-decoration: none;
-  border-color: #2196f3;
+  border-color: (--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .btn-solution {
@@ -295,15 +347,12 @@ address {
   margin: auto;
 }
 .nav-button {
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--main-bg-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -313,6 +362,12 @@ address {
 }
 
 .nav-button-item {
+  background: #f5f4fa;
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+  border-radius: 4px;
   border: none;
   font-weight: 500;
   text-align: center;
@@ -327,6 +382,9 @@ address {
   color: var(--main-bg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.nav-title {
+  padding-right: 8px;
 }
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
@@ -343,23 +401,30 @@ address {
 .project {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 56px;
 }
 .project-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 .item {
-  font-family: Roboto;
+  display: flex;
+  justify-content: center;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+  padding-bottom: 4px;
 }
 .text {
+  display: flex;
+  justify-content: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  padding-bottom: 50px;
 }
