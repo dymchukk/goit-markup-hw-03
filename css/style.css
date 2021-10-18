@@ -35,7 +35,7 @@ button {
 img {
   display: block;
   max-width: 100%;
-  padding-bottom: 30px;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -65,12 +65,10 @@ address {
   margin: 0 auto;
 }
 .current {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 .logo {
-  padding-right: 93px;
+  margin-right: 93px;
   padding-bottom: 32px;
   font-family: "Raleway", normal;
   font-weight: 700;
@@ -98,8 +96,8 @@ address {
   padding-top: 50px;
   padding-bottom: 20px;
 }
-.logo-booton-adress {
-  padding-bottom: 9px;
+.logo-booton-adress:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-contacts {
   color: var(--main-text-color);
@@ -140,7 +138,7 @@ address {
   display: flex;
   align-items: center;
 }
-.header-nav {
+.header {
   display: flex;
   justify-self: center;
 }
@@ -149,15 +147,11 @@ address {
 }
 .header-container {
   display: flex;
-  margin-top: 32px;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .solution-col {
-  width: 1600px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  padding: 200px 0;
+  max-width: 1600px;
   background: #2f303a;
 }
 .solution {
@@ -178,7 +172,7 @@ address {
 .solution-col-top {
   padding-bottom: 200px;
 }
-.footer-contacts-footer {
+.footer-contacts {
   width: 1600px;
   height: 252px;
   left: 0px;
@@ -186,16 +180,9 @@ address {
 }
 .features {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-right: 30px;
-  padding-bottom: 94px;
-  margin: 0 30px;
 }
 .features-title:not(:last-child) {
-  padding: 30px;
-  font-weight: 700;
-  font-size: 14px;
+  margin-right: 30px;
   line-height: 1.7;
   color: var(--main-title-color);
 }
@@ -205,6 +192,7 @@ address {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--main-title-color);
 }
@@ -222,7 +210,7 @@ address {
   color: var(--main-title-color);
 }
 .works-main {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -230,44 +218,28 @@ address {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
-.works {
-  display: flex;
-  flex-basis: calc(100% / 3 - 30px);
-  flex-direction: row;
-  margin-left: 30px;
+.work-section {
+  padding-top: 0px;
 }
 .work-list {
   display: flex;
-  margin-left: 30px;
-  padding-bottom: 188px;
 }
 .works-item {
   display: flex;
-  flex-direction: row;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.7;
-  margin: 0 30px;
-  justify-content: space-around;
-  padding-bottom: 50px;
+  margin-right: 30px;
 }
 .team {
   display: flex;
   color: var(--main-title-color);
   font-weight: 700;
   font-size: 36px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   line-height: 1.16;
 }
-.team-item {
+.team-item:not(:last-child) {
   flex-basis: calc(100% / 4 - 30px);
-  flex-direction: row;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 0px;
-  border-color: #ffffff;
+  margin-right: 30px;
+  text-align: center;
 }
 .team-our {
   font-weight: 700;
@@ -275,24 +247,27 @@ address {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   color: var(--main-title-color);
 }
-.team-title {
-  display: flex;
-  justify-content: center;
+.team-title  {
   color: var(--main-title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.team-title-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-text {
-  display: flex;
-  justify-content: center;
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.18;
+}
+.team-section {
+  background: #f5f4fa;
 }
 .nav {
   display: flex;
@@ -300,7 +275,6 @@ address {
   margin-bottom: 56px;
 }
 .nav-menu {
-  margin-right: 93px;
   display: flex;
   align-items: center;
 }
@@ -316,6 +290,7 @@ address {
 .nav-list-title {
   display: flex;
   font-weight: 500;
+  padding: 32px 0;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -329,6 +304,8 @@ address {
   padding-bottom: 94px;
 }
 .btn {
+  display: flex;
+  margin: auto;
   text-align: center;
   position: center;
   display: flex;
@@ -343,9 +320,7 @@ address {
   border-color: (--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.btn-solution {
-  display: flex;
-  margin: auto;
+
 }
 .nav-button {
   padding: 10px 32px;
@@ -363,20 +338,11 @@ address {
 }
 
 .nav-button-item {
-  background: #f5f4fa;
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
-  border-radius: 4px;
-  border: none;
-  font-weight: 500;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.06em;
-  color: var(--main-title-color);
-  cursor: pointer;
+text-transform: none;
+outline: none;
+border: navajowhite;
+padding: 10px 15px;
+cursor: pointer;
 }
 .nav-button-item:hover {
   background-color: var(--accent-color);
@@ -384,8 +350,8 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.nav-title {
-  padding-right: 8px;
+.nav-title:not(:last-child) {
+  margin-right: 8px;
 }
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
@@ -402,7 +368,6 @@ address {
 .project {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 56px;
 }
 .project-item:not(:nth-child(3n)) {
@@ -410,7 +375,6 @@ address {
 }
 .item {
   display: flex;
-  justify-content: center;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -421,11 +385,14 @@ address {
 }
 .text {
   display: flex;
-  justify-content: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   padding-bottom: 50px;
+}
+.footer {
+  background: #2f303a;
+  padding: 60px 0;
 }
