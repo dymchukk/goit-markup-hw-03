@@ -250,7 +250,7 @@ address {
   margin-bottom: 50px;
   color: var(--main-title-color);
 }
-.team-title  {
+.team-title {
   color: var(--main-title-color);
   font-weight: 500;
   font-size: 16px;
@@ -320,8 +320,6 @@ address {
   border-color: (--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-}
 .nav-button {
   padding: 10px 32px;
   font-weight: 700;
@@ -338,11 +336,11 @@ address {
 }
 
 .nav-button-item {
-text-transform: none;
-outline: none;
-border: navajowhite;
-padding: 10px 15px;
-cursor: pointer;
+  text-transform: none;
+  outline: none;
+  border: navajowhite;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 .nav-button-item:hover {
   background-color: var(--accent-color);
