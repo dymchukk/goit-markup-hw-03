@@ -47,6 +47,10 @@ li {
 address {
   font-style: normal;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -66,8 +70,9 @@ address {
   margin: 0 auto;
 }
 .logo {
+  display: block;
   margin-right: 93px;
-  padding-bottom: 32px;
+  padding-bottom: 32px 0;
   font-family: 'Raleway', normal;
   font-weight: 700;
   font-size: 26px;
@@ -82,6 +87,11 @@ address {
   font-family: 'Raleway', normal;
 }
 .logo-st {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  font-family: 'Raleway', normal;
   color: var(--main-bg-color);
 }
 .logo-list-title {
@@ -91,8 +101,7 @@ address {
   color: var(--main-text-color);
 }
 .logo-booton {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo-booton-adress:not(:last-child) {
   margin-bottom: 9px;
@@ -102,6 +111,8 @@ address {
   background: #2f303a;
 }
 .contacts {
+  margin-left: 50px;
+  box-sizing: border-box;
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -114,7 +125,7 @@ address {
   color: var(--main-bg-color);
 }
 .contacts-address {
-  font-size: 14px;
+  font-size: 14pxg
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-bg-color);
@@ -129,28 +140,23 @@ address {
 .contacts-link:hover {
   color: var(--accent-color);
 }
-.contacts-link::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  left: 12px;
-  border-radius: 0px;
-  background-color: #ffffff;
-  background-image: url(../images/);
-}
 .contacts-top {
   padding-bottom: 32px;
-  margin-left: auto;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
 }
 .contacts-footer {
-  margin-bottom: 9px;
+}
+.contacts-item {
+  margin-right: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
 }
 .header {
   display: flex;
-  justify-self: center;
   border-bottom: 1px solid #ececec;
 }
 .header-contacts {
@@ -173,7 +179,7 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 200px 0;
+  margin-bottom: 30px;
   background: #2f303a;
   color: var(--main-bg-color);
 }
@@ -230,9 +236,8 @@ address {
 .work-list {
   display: flex;
 }
-.works-item {
-  display: flex;
-  margin-left: 30px;
+.works-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team {
   display: flex;
@@ -241,7 +246,7 @@ address {
   margin-right: 30px;
 }
 .team-item {
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc((100% - 90px) / 4);
   text-align: center;
 }
 .team-our {
@@ -296,12 +301,11 @@ address {
   color: var(--accent-color);
 }
 .nav-list-title {
-  display: flex;
+  display: block;
   font-weight: 500;
   padding: 32px 0;
   font-size: 14px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
@@ -310,10 +314,6 @@ address {
 }
 .nav-list-title.current {
   color: var(--accent-color);
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .btn {
   display: flex;
@@ -342,6 +342,7 @@ address {
 .nav-button-item {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   text-transform: none;
   outline: none;
@@ -360,17 +361,19 @@ address {
 .nav-title:not(:last-child) {
   margin-right: 8px;
 }
-.site-nav-item:not(:last-child) {
-  margin-right: 50px;
+.site-nav-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 .project {
   margin-left: -30px;
@@ -389,7 +392,7 @@ address {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .text {
   font-size: 16px;
@@ -400,4 +403,10 @@ address {
 .footer {
   background: #2f303a;
   padding: 60px 0;
+}
+.card-thamb{
+  padding-right:24px;
+  padding-lef:24px;
+  padding-top:20px;
+  padding-bottom: 4px;
 }
