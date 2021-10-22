@@ -331,7 +331,6 @@ address {
   text-decoration: none;
   border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -341,6 +340,9 @@ address {
 }
 
 .nav-button-item {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
   text-transform: none;
   outline: none;
   border: navajowhite;
@@ -371,11 +373,15 @@ address {
   justify-content: center;
 }
 .project {
+  margin-left: -30px;
+  margin-top: -30px;
   display: flex;
   flex-wrap: wrap;
 }
-.project-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+.project .project-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 .item {
   font-weight: 700;
