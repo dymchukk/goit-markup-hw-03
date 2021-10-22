@@ -101,18 +101,16 @@ address {
   color: var(--main-text-color);
 }
 .logo-booton{
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
-}
-.logo-booton-adress:not(:last-child) {
-  margin-bottom: 9px;
+.logo-booton-adress{
+  margin-top: 20px;
 }
 .footer-contacts {
   color: var(--main-text-color);
   background: #2f303a;
 }
 .contacts {
-  margin-left: 50px;
   box-sizing: border-box;
   color: var(--main-text-color);
   font-weight: 500;
@@ -142,6 +140,7 @@ address {
   color: var(--accent-color);
 }
 .contacts-top {
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -155,6 +154,8 @@ address {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
+.contacts-item:not(:last-child){
+  margin-right: 50px;}
 .header {
   display: flex;
   border-bottom: 1px solid #ececec;
@@ -266,7 +267,7 @@ address {
   margin-bottom: 10px;
 }
 .card-text {
-  padding-bottom: 20px;
+  margin-top: 20px;
 }
 .team-text {
   color: var(--main-text-color);
@@ -374,6 +375,7 @@ address {
   margin-right: 50px;
 }
 .site-nav {
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
