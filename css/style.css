@@ -101,6 +101,10 @@ address {
   color: var(--main-text-color);
 }
 .logo-booton {
+<<<<<<< HEAD
+=======
+  display: block;
+>>>>>>> 29d5f31be090f0df26a9d030cbe38f148df9fd66
   margin-bottom: 20px;
 }
 .logo-booton-adress:not(:last-child) {
@@ -265,9 +269,8 @@ address {
   line-height: 1.18;
   margin-bottom: 10px;
 }
-.team-title-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.card-text {
+  padding-bottom: 20px;
 }
 .team-text {
   color: var(--main-text-color);
@@ -276,6 +279,9 @@ address {
 }
 .team-section {
   background: #f5f4fa;
+}
+.team-title-text {
+  margin-top: 20px;
 }
 .nav {
   display: flex;
@@ -394,6 +400,10 @@ address {
   color: var(--main-title-color);
   margin-bottom: 4px;
 }
+
+.item * {
+  outline: solid #757575;
+}
 .text {
   font-size: 16px;
   line-height: 1.87;
@@ -404,9 +414,19 @@ address {
   background: #2f303a;
   padding: 60px 0;
 }
+<<<<<<< HEAD
 .card-thamb{
   padding-right:24px;
   padding-lef:24px;
   padding-top:20px;
   padding-bottom: 4px;
 }
+=======
+.card-thumb {
+  margin-bottom: 20px;
+}
+.card {
+  width: 370px;
+  margin-bottom: 20px;
+}
+>>>>>>> 29d5f31be090f0df26a9d030cbe38f148df9fd66
