@@ -100,12 +100,9 @@ address {
   line-height: ;
   color: var(--main-text-color);
 }
-.logo-booton {
-<<<<<<< HEAD
-=======
-  display: block;
->>>>>>> 29d5f31be090f0df26a9d030cbe38f148df9fd66
+.logo-booton{
   margin-bottom: 20px;
+}
 }
 .logo-booton-adress:not(:last-child) {
   margin-bottom: 9px;
@@ -145,7 +142,6 @@ address {
   color: var(--accent-color);
 }
 .contacts-top {
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
 }
