@@ -82,6 +82,11 @@ address {
   font-family: 'Raleway', normal;
 }
 .logo-st {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  font-family: 'Raleway', normal;
   color: var(--main-bg-color);
 }
 .logo-list-title {
@@ -91,8 +96,8 @@ address {
   color: var(--main-text-color);
 }
 .logo-booton {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 .logo-booton-adress:not(:last-child) {
   margin-bottom: 9px;
@@ -128,15 +133,6 @@ address {
 }
 .contacts-link:hover {
   color: var(--accent-color);
-}
-.contacts-link::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  left: 12px;
-  border-radius: 0px;
-  background-color: #ffffff;
-  background-image: url(../images/);
 }
 .contacts-top {
   padding-bottom: 32px;
@@ -260,9 +256,8 @@ address {
   line-height: 1.18;
   margin-bottom: 10px;
 }
-.team-title-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.card-text {
+  padding-bottom: 20px;
 }
 .team-text {
   color: var(--main-text-color);
@@ -271,6 +266,9 @@ address {
 }
 .team-section {
   background: #f5f4fa;
+}
+.team-title-text {
+  margin-top: 20px;
 }
 .nav {
   display: flex;
@@ -391,6 +389,10 @@ address {
   color: var(--main-title-color);
   padding-bottom: 4px;
 }
+
+.item * {
+  outline: solid #757575;
+}
 .text {
   font-size: 16px;
   line-height: 1.87;
@@ -400,4 +402,11 @@ address {
 .footer {
   background: #2f303a;
   padding: 60px 0;
+}
+.card-thumb {
+  margin-bottom: 20px;
+}
+.card {
+  width: 370px;
+  margin-bottom: 20px;
 }
