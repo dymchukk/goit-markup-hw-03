@@ -412,19 +412,3 @@ address {
   background: #2f303a;
   padding: 60px 0;
 }
-<<<<<<< HEAD
-.card-thamb{
-  padding-right:24px;
-  padding-lef:24px;
-  padding-top:20px;
-  padding-bottom: 4px;
-}
-=======
-.card-thumb {
-  margin-bottom: 20px;
-}
-.card {
-  width: 370px;
-  margin-bottom: 20px;
-}
->>>>>>> 29d5f31be090f0df26a9d030cbe38f148df9fd66
